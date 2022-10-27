@@ -1,6 +1,8 @@
 :root {
   --background-color: #000000;
-  --font-color: #ffffff;
+  --font-color: #FFFFFF;
+  --button-color: #F9804B;
+  --selected-color:#FFEE2E;
 }
 
 body {
@@ -43,4 +45,58 @@ a {
 .header__nav__list {
   display: flex;
   column-gap: 60px;
+}
+
+.watch-online {
+  height: 780px;
+  background-image: url('../../assets/images/giant-panda.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 -80px;
+  background-color: var(--background-color);
+  background-size: cover;
+  color: var(--font-color);
+}
+
+.watch-online__wrapper {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.watch-online__circle {
+  position: absolute;
+  right: 110px;
+  top: 11px;
+  background-color: var(--button-color);
+  height: 465px;
+  width: 465px;
+  border-radius: 50%;
+}
+
+.watch-online__title {
+  position: absolute;
+  right: 2px;
+  top: 82px;
+  text-transform: uppercase;
+  width: 500px;
+  font-size: 105px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 77%;
+}
+
+.watch-online__title span {
+  color: var(--selected-color);
+}
+
+.watch-online__button {
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  position: absolute;
+  right: 101px;
+  top: 544px;
+  border-radius: 25px;
+  padding: 18px 91px;
+  border: none;
+  color: var(--font-color);
 }
