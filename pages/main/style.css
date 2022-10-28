@@ -18,6 +18,16 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .header {
   background-color: var(--background-color);
   color: var(--font-color);
@@ -48,11 +58,10 @@ a {
 }
 
 .watch-online {
-  height: 780px;
+  height: 700px;
   background-image: url('../../assets/images/giant-panda.jpg');
   background-repeat: no-repeat;
   background-position: 0 -80px;
-  background-color: var(--background-color);
   background-size: cover;
   color: var(--font-color);
 }
@@ -99,4 +108,46 @@ a {
   padding: 18px 91px;
   border: none;
   color: var(--font-color);
+}
+
+.backstage {
+  padding-top: 140px;
+  padding-bottom: 100px;
+  background-image: url('../../assets/images/flower_foto1.png');
+  background-repeat: no-repeat;
+  background-position-y: 24%;
+  background-position-x: 107.5%;
+}
+
+.backstage__wrapper {
+  display: flex;
+  column-gap: 86px;
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.backstage__image {
+  width: 609px;
+  height: 403px;
+}
+
+.backstage__right {
+  margin-top: -38px;
+}
+
+.backstage__right__title {
+  margin-bottom: 25px;
+  line-height: 116%;
+}
+.backstage__right__text {
+  line-height: 125%;
+}
+
+.backstage__right__subtitle {
+  margin-top: 55px;
+}
+
+.backstage__right__text__bottom {
+  line-height: 141%;
 }
