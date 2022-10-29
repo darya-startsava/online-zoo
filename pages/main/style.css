@@ -161,13 +161,14 @@ h4 {
 
 .pets {
   margin-top: 62px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   background-image: url('../../assets/images/palm_foto.png'), url('../../assets/images/strelitzia1.png');
   background-position: -82% 100%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
 }
 
 .pets__wrapper {
+  position: relative;
   width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -237,4 +238,22 @@ h4 {
 .feed {
   background-color: #F9804B;
   height: 200px;
+}
+
+.button__arrow {
+  position: absolute;
+  top: 37%;
+  background-color: var(--button-color);
+  color: var(--font-color);
+  border-radius:50%;
+  padding: 23px;
+  border: none;
+}
+
+.button__arrow__left {
+  right: 93%;
+}
+
+.button__arrow__right {
+  right: 3%;
 }
