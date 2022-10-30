@@ -370,8 +370,15 @@ position: relative;
   right: -1px;
   background: var(--orange);
   content: '';
-  z-index: -1;
   border-radius: 4px;
+}
+
+.feed__scheme__item__image-wrapper{
+  background: white;
+  z-index: 2;
+  display: flex;
+  width: inherit;
+  border-radius: 3px;
 }
 
 .feed__scheme__item__image {
