@@ -13,6 +13,7 @@
   --simple-orange: #F9804B;
   --gray: #767474;
   --green: #4B9200;
+  --rad: #D31414;
   --button-active-color: var(--green);
   --gray-light: #F1F3F2;
   --orange: linear-gradient(var(--first-border-color), var(--second-border-color));
@@ -694,10 +695,14 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 
-.footer__button__submit:hover, .footer__button__submit:active {
+.footer__button__submit:hover {
   background-color: var(--second-background-color);
 }
 
+.footer__button__submit:active {
+  color: var(--rad);
+  border-color: var(--rad);
+}
 
 .footer__subscription__wrapper {
   width: 367px;
