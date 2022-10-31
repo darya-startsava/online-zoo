@@ -3,34 +3,39 @@
   --second-background-color: #FFFFFF;
   --first-font-color: #FFFFFF;
   --second-font-color: #FE9013;
+  --third-font-color: #BDBDBD;
   --button-color: #F9804B;
-  --selected-color:#FFEE2E;
+  --selected-color: #FFEE2E;
   --first-border-color: #FA6F32;
   --second-border-color: #FE9013;
-  --orange:linear-gradient(var(--first-border-color), var(--second-border-color));
-  --orange-gradient: linear-gradient( 
-    315.75deg, 
-    rgba(254, 210, 144, 0.7) 30.06%, 
-    #febdab 100.95%, 
-    rgba(254, 210, 144, 0.7) 106.36% 
-  ), 
-  linear-gradient( 
-    315.75deg, 
-    rgba(254, 189, 171, 0.74) 30.06%, 
-    rgba(243, 169, 248, 0.66) 50.74%, 
-    #e0d8f0 80.49%, 
-    #eaf7fe 127.9%, 
-    #eaf7fe 149.54% 
-  ), 
-  linear-gradient( 
-    315.75deg, 
-    rgba(254, 189, 171, 0.74) 30.06%, 
-    rgba(243, 169, 248, 0.66) 50.74%, 
-    #e0d8f0 80.49%, 
-    #eaf7fe 127.9%, 
-    #eaf7fe 149.54% 
-  );
-
+  --gray: #767474;
+  --gray-light: #F1F3F2;
+  --orange: linear-gradient(var(--first-border-color), var(--second-border-color));
+  --orange-gradient: linear-gradient(315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%),
+    linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%),
+    linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%);
+  --pink-gradient: linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #E0D8F0 80.49%, #EAF7FE 127.9%,
+      #EAF7FE 149.54%), linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #E0D8F0 80.49%, #EAF7FE 127.9%,
+      #EAF7FE 149.54%);
 }
 
 body {
@@ -176,6 +181,7 @@ h4 {
   margin-bottom: 25px;
   line-height: 116%;
 }
+
 .backstage__right__text {
   line-height: 125%;
 }
@@ -235,7 +241,7 @@ h4 {
   border-radius: 4px;
 }
 
-.pets__item__image{
+.pets__item__image {
   width: 366px;
   height: 366px;
   border-radius: 4px 4px 0 0;
@@ -269,7 +275,7 @@ h4 {
   top: 37%;
   background-color: var(--button-color);
   color: var(--first-font-color);
-  border-radius:50%;
+  border-radius: 50%;
   padding: 23px;
   border: none;
 }
@@ -318,29 +324,29 @@ h4 {
   margin-bottom: -2px;
 }
 
-.feed__text_down{
+.feed__text_down {
   margin-right: 135px;
-  }
+}
 
 .feed__text_down span {
-position: relative;
+  position: relative;
 }
 
 .feed__text_down span::after {
   position: absolute;
   content: '';
   height: 1px;
-  bottom: -4px; 
+  bottom: -4px;
   background: var(--second-border-color);
   margin: 0 auto;
-	left: 0;
+  left: 0;
   right: 0;
 }
 
 .feed__second-title {
   text-align: center;
   margin-bottom: 45px;
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .feed__scheme__wrapper {
@@ -373,7 +379,7 @@ position: relative;
   border-radius: 4px;
 }
 
-.feed__scheme__item__image-wrapper{
+.feed__scheme__item__image-wrapper {
   background: white;
   z-index: 2;
   display: flex;
@@ -399,5 +405,146 @@ position: relative;
   margin-top: 51px;
 }
 
+.testimonials {
+  padding-top: 105px;
+  padding-bottom: 160px;
+  background-image: url('../../assets/images/leav_foto.png');
+  background-repeat: no-repeat;
+  background-position-y: 126%;
+  background-position-x: 110.5%;
+}
 
+.testimonials__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1160px;
+  margin: 0 auto;
+  row-gap: 16px;
+  padding-bottom: 20px;
+}
 
+.testimonials__items__wrapper {
+  display: flex;
+  column-gap: 32px;
+}
+
+.testimonials__item {
+  position: relative;
+  background-color: var(--gray-light);
+  border-radius: 21px;
+  padding: 0 13px 1px 15px;
+  line-height: 18px;
+  width: 237px;
+  height: 390px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.testimonials__item::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: var(--pink-gradient);
+  content: '';
+  z-index: -1;
+  border-radius: 13px;
+}
+
+.testimonials__item__border__wrapper {
+  background-color: var(--gray-light);
+  margin: 2px -11px 0 -13px;
+  padding: 0 12px 0 12px;
+  height: 388px;
+  border-radius: 21px;
+}
+
+.testimonials__item__wrapper {
+  height: 367px;
+  overflow: hidden;
+}
+
+.testimonials__item__about-user__wrapper {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.testimonials__item__icon {
+  width: 37px;
+  height: 37px;
+}
+
+.testimonials__item__title__wrapper {
+  line-height: 7px;
+  margin-top: 3px;
+  margin-bottom: -2px;
+}
+
+.testimonials__item__title {
+  font-weight: 400;
+}
+
+.testimonials__item__location-date {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--third-font-color);
+  display: flex;
+  column-gap: 7px;
+  margin-top: -5px;
+  margin-bottom: 18px;
+}
+
+.testimonials__item__text {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--gray);
+  margin-top: 0px;
+}
+
+.testimonials__scroll {
+  position: relative;
+  background: linear-gradient(to right, var(--second-border-color) 0%, var(--second-border-color) 18.5%, #fff 18.5%, #fff 100%);
+  border: solid 2px var(--pink-gradient);
+  border-radius: 8px;
+  height: 6px;
+  width: 600px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  margin-top: 4px;
+}
+
+.testimonials__scroll::-webkit-slider-thumb {
+  width: 6px;
+  height: 6px;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background-color: var(--second-border-color);
+  cursor: pointer;
+}
+
+.testimonials__scroll::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: var(--pink-gradient);
+  z-index: -1;
+  content: '';
+  border-radius: 4px;
+}
+
+.testimonials__button {
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-top: 17px;
+}
+
+.footer {
+  background-color: var(--first-background-color);
+  height: 200px;
+}
