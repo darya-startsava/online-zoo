@@ -5,6 +5,7 @@
   --second-font-color: #FE9013;
   --third-font-color: #BDBDBD;
   --button-color: #F9804B;
+  --button-hover-color: #E47209;
   --second-button-color: rgba(196, 196, 196, 0.5);
   --selected-color: #FFEE2E;
   --first-border-color: #FA6F32;
@@ -12,6 +13,7 @@
   --orange: #F9804B;
   --gray: #767474;
   --green: #4B9200;
+  --button-active-color: var(--green);
   --gray-light: #F1F3F2;
   --orange: linear-gradient(var(--first-border-color), var(--second-border-color));
   --orange-gradient: linear-gradient(315.75deg,
@@ -41,6 +43,10 @@
       #EAF7FE 149.54%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -67,6 +73,20 @@ h3 {
 h4 {
   font-size: 24px;
   font-weight: 400;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+  background: var(--button-hover-color);
+}
+
+button:active {
+  background-color: var(--button-active-color);
+  background: var(--button-active-color);
 }
 
 .logo__wrapper {
@@ -149,7 +169,7 @@ h4 {
   position: absolute;
   right: 110px;
   top: 11px;
-  background-color: var(--button-color);
+  background: var(--orange);
   height: 465px;
   width: 465px;
   border-radius: 50%;
@@ -175,6 +195,7 @@ h4 {
   position: absolute;
   right: 101px;
   top: 544px;
+  background: var(--orange);
 }
 
 .backstage {
@@ -298,7 +319,7 @@ h4 {
 .button__arrow {
   position: absolute;
   top: 37%;
-  background-color: var(--button-color);
+  background: var(--orange);
   color: var(--first-font-color);
   border-radius: 50%;
   padding: 23px;
@@ -430,6 +451,10 @@ h4 {
   margin-top: 51px;
 }
 
+.feed__button {
+  background: var(--orange);
+}
+
 .testimonials {
   padding-top: 105px;
   padding-bottom: 160px;
@@ -540,6 +565,7 @@ h4 {
   transition: background 450ms ease-in;
   -webkit-appearance: none;
   margin-top: 4px;
+  cursor: pointer;
 }
 
 .testimonials__scroll::-webkit-slider-thumb {
@@ -567,6 +593,7 @@ h4 {
   border-radius: 4px;
   align-self: flex-start;
   margin-top: 17px;
+  background: var(--orange);
 }
 
 .footer {
@@ -623,6 +650,12 @@ h4 {
   border-radius: 5px;
 }
 
+
+.footer__button__submit:hover, .footer__button__submit:active {
+  background-color: var(--second-background-color);
+}
+
+
 .footer__subscription__wrapper {
   width: 367px;
 }
@@ -658,9 +691,21 @@ h4 {
   border: none;
   background: transparent;
   color: var(--first-font-color);
+  transition: color .3s;
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+.footer__social__item__button:hover,
+.footer__social__item__button:active {
+  background: transparent;
+  color: var(--green);
+}
+
+.footer__social__item__button:hover .footer__social__item__icon,
+.footer__social__item__button:active .footer__social__item__icon {
+  background-color: var(--green);
 }
 
 .footer__social__item__icon {
