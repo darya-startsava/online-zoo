@@ -10,7 +10,7 @@
   --selected-color: #FFEE2E;
   --first-border-color: #FA6F32;
   --second-border-color: #FE9013;
-  --orange: #F9804B;
+  --simple-orange: #F9804B;
   --gray: #767474;
   --green: #4B9200;
   --button-active-color: var(--green);
@@ -148,6 +148,19 @@ button:active {
 .nav__list {
   display: flex;
   column-gap: 60px;
+}
+
+.header__nav__list__item__about {
+  color: var(--second-border-color);
+}
+
+.header__designed-by:hover,
+.header__designed-by:active,
+.header__nav__list__item:hover,
+.header__nav__list__item:active,
+.footer__nav__list__item:hover,
+.footer__nav__list__item:active {
+  color: var(--second-border-color);
 }
 
 .watch-online {
@@ -288,15 +301,40 @@ button:active {
 }
 
 .pets__item__image {
+  position: relative;
   width: 366px;
   height: 366px;
   border-radius: 4px 4px 0 0;
+}
+
+.pets__item:hover .pets__item__image {
+  width: 386px;
+  height: 386px;
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.pets__item:hover {
+  position: relative;
+}
+
+.pets__item:hover .pets__item__description__wrapper {
+  top: 350px;
+  right: center;
+  position: absolute;
+  background-color: var(--gray);
+  border: 2px solid var(--first-font-color);
+  border-radius: 5px;
+  color: var(--first-font-color);
 }
 
 .pets__item__description__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
+  transition-duration: 1s;
 }
 
 .pets__item__description__title {
@@ -670,7 +708,7 @@ button:active {
 
 .footer__bottom__left__wrapper {
   margin-top: 34px;
-  row-gap: 44px;
+  row-gap: 47px;
   display: flex;
   flex-direction: column;
 }
@@ -683,8 +721,8 @@ button:active {
 .footer__social__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 7px;
-  margin-left: -8px;
+  row-gap: 8px;
+  margin-left: 2px;
 }
 
 .footer__social__item__button {
@@ -738,6 +776,10 @@ button:active {
   align-self: end;
   margin-left: 60px;
   margin-bottom: -12px;
+}
+
+.footer__nav__list__item__about {
+  color: var(--second-border-color);
 }
 
 .footer__desined__wrapper {
