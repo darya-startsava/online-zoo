@@ -412,11 +412,11 @@ button:active {
   margin-right: 135px;
 }
 
-.feed__text_down span {
+.feed__text_down a {
   position: relative;
 }
 
-.feed__text_down span::after {
+.feed__text_down a::after {
   position: absolute;
   content: '';
   height: 1px;
@@ -716,6 +716,7 @@ button:active {
 .footer__bottom__button {
   border-radius: 5px;
   background: var(--orange);
+  text-align: center;
 }
 
 .footer__social__wrapper {
