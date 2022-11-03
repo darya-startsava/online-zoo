@@ -600,7 +600,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .testimonials__scroll {
   position: relative;
-  background: linear-gradient(to right, var(--second-border-color) 0%, var(--second-border-color) 18.5%, #fff 18.5%, #fff 100%);
+  background: white;
   border: solid 2px var(--pink-gradient);
   border-radius: 8px;
   height: 6px;
@@ -613,10 +613,10 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .testimonials__scroll::-webkit-slider-thumb {
-  width: 6px;
+  width: 115px;
   height: 6px;
   -webkit-appearance: none;
-  border-radius: 50%;
+  border-radius: 8px;
   background-color: var(--second-border-color);
   cursor: pointer;
 }
