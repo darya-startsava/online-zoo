@@ -1,0 +1,165 @@
+:root {
+  --first-background-color: #000000;
+  --second-background-color: #FFFFFF;
+  --first-font-color: #FFFFFF;
+  --second-font-color: #FE9013;
+  --third-font-color: #BDBDBD;
+  --button-color: #F9804B;
+  --button-hover-color: #E47209;
+  --second-button-color: rgba(196, 196, 196, 0.5);
+  --selected-color: #FFEE2E;
+  --first-border-color: #FA6F32;
+  --second-border-color: #FE9013;
+  --simple-orange: #F9804B;
+  --gray: #767474;
+  --green: #4B9200;
+  --rad: #D31414;
+  --button-active-color: var(--green);
+  --gray-light: #F1F3F2;
+  --orange: linear-gradient(var(--first-border-color), var(--second-border-color));
+  --orange-gradient: linear-gradient(315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%),
+    linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%),
+    linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%);
+  --pink-gradient: linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #E0D8F0 80.49%, #EAF7FE 127.9%,
+      #EAF7FE 149.54%), linear-gradient(315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #E0D8F0 80.49%, #EAF7FE 127.9%,
+      #EAF7FE 149.54%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+button:hover, .feed__button:hover, .footer__bottom__button:hover {
+  background-color: var(--button-hover-color);
+  background: var(--button-hover-color);
+}
+
+button:active, .feed__button:active, .footer__bottom__button:active {
+  background-color: var(--button-active-color);
+  background: var(--button-active-color);
+}
+
+.logo__wrapper {
+  position: relative;
+  width: 82px;
+  height: 52px;
+  color: var(--first-font-color);
+  border: 1px solid var(--first-font-color);
+  border-radius: 2px;
+}
+
+.logo__text {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+  margin: 3px 0;
+}
+
+.logo__bamboo {
+  position: absolute;
+  top: 23px;
+  left: 10px;
+}
+
+.button {
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  color: var(--first-font-color);
+  border-radius: 25px;
+  padding: 18px 0px;
+  width: 298px;
+  border: none;
+}
+
+.header {
+  background-color: var(--first-background-color);
+  color: var(--first-font-color);
+  padding: 14px 0;
+}
+
+.header__headering {
+  position: absolute;
+  left: -99999px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header__left__wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 60px;
+}
+
+.header__nav__list__item__donate {
+  color: var(--second-border-color);
+}
+
+.header__designed-by:hover,
+.header__designed-by:active,
+.header__nav__list__item:hover,
+.header__nav__list__item:active,
+.footer__nav__list__item:hover,
+.footer__nav__list__item:active {
+  color: var(--second-border-color);
+}
