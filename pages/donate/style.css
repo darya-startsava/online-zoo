@@ -290,7 +290,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   background-color: #72828E;
   width: 894px;
   top: 12px;
-  left: 48px;
+  left: 35px;
   z-index: 0;
 }
 
@@ -321,8 +321,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .radio__item__checkmark__wrapper {
   position: absolute;
-  top: -46px;
-  left: 22px;
+  top: -40px;
+  left: 20px;
   height: 19px;
   width: 19px;
   border-radius: 50%;
@@ -330,8 +330,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .radio__item__checkmark {
   position: absolute;
-  top: 12px;
-  left: 16px;
+  top: 5px;
+  left: 5px;
   height: 9px;
   width: 9px;
   background-color: var(--selected-color);
@@ -357,9 +357,6 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .radio__item__checkmark:after {
   content: "";
   position: absolute;
-  outline-color: #404950;
-  outline-style: solid;
-  outline-width: 5px;
   border: 5px solid var(--selected-color);
   left: 0px;
   top: 0px;
@@ -372,12 +369,13 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   outline-color: var(--second-border-color);
   outline-style: solid;
   outline-width: 2px;
-  border: 15px solid rgba(255, 255, 255, 1);
-  left: -5px;
+  border: 8px solid transparent;
+  border-style: double;
+  left: -9px;
   top: -9px;
   width: 22px;
   height: 22px;
-  background-color: var(--second-border-color);
+  background-color: transparent;
 }
 
 
@@ -399,6 +397,16 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   border-radius: 50%;
   background: var(--selected-color);
 }
+
+
+.feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper {
+
+  outline-color: var(--second-border-color);
+  outline-style: solid;
+  outline-width: 2px;
+  border: 2px solid transparent
+}
+
 
 .amount-label_active {
   color: var(--second-font-color);
