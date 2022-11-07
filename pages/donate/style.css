@@ -290,7 +290,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   background-color: #72828E;
   width: 894px;
   top: 12px;
-  left: 35px;
+  left: 38px;
   z-index: 0;
 }
 
@@ -321,19 +321,19 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .radio__item__checkmark__wrapper {
   position: absolute;
-  top: -40px;
-  left: 20px;
-  height: 20px;
-  width: 20px;
+  top: -49px;
+  left: 14px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
 .radio__item__checkmark {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  height: 9px;
-  width: 9px;
+  top: 15px;
+  left: 15px;
+  height: 10px;
+  width: 10px;
   background-color: var(--selected-color);
   border-radius: 50%;
   z-index: 2;
@@ -354,16 +354,6 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   border-radius: 50%;
 }
 
-.radio__item__checkmark:after {
-  content: "";
-  position: absolute;
-  border: 5px solid var(--selected-color);
-  left: 0px;
-  top: 0px;
-  border-radius: 50%;
-}
-
-
 .feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper:after {
   display: block;
   outline-color: var(--second-border-color);
@@ -371,22 +361,17 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   outline-width: 2px;
   border: 8px solid transparent;
   border-style: double;
-  left: -9px;
-  top: -9px;
-  width: 22px;
-  height: 22px;
+  left: -10px;
+  top: -10px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
+  cursor: pointer;
 }
 
-
-.feed__down__radio__item__wrapper input:checked~.radio__item__checkmark:after {
-  display: block;
-  outline-color: var(--second-border-color);
-  outline-style: solid;
-  outline-width: 2px;
-  border: 5px solid #404950;
-  left: -5px;
-  top: -5px;
+.feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper .radio__item__checkmark {
+  top: 5px;
+  left: 5px;
 }
 
 .feed__down__radio__item__wrapper .radio__item__checkmark__wrapper:after {
@@ -404,7 +389,11 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   outline-color: var(--second-border-color);
   outline-style: solid;
   outline-width: 2px;
-  border: 2px solid transparent
+  border: 2px solid transparent;
+  height: 20px;
+  width: 20px;
+  top: -40px;
+  left: 23px;
 }
 
 
