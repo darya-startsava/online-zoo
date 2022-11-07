@@ -177,7 +177,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .feed {
   color: var(--first-font-color);
   padding-top: 7px;
-  padding-bottom: 100px;
+  padding-bottom: 177px;
   background: var(--orange-gradient);
 }
 
@@ -215,7 +215,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   margin: 0 auto;
   border-radius: 20px;
   padding-top: 1px;
-  padding-bottom: 59px;
+  padding-bottom: 49px;
   box-sizing: border-box;
   padding-left: 92px;
   padding-right: 92px;
@@ -402,4 +402,115 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .amount-label_active {
   color: var(--second-font-color);
+}
+
+.feed__amount__inputs__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 98px;
+  position: relative;
+}
+
+.feed__amount__input__number {
+  margin: 0 auto;
+  width: 260px;
+  height: 50px;
+  border: 1px solid #929699;
+  background-color: transparent;
+}
+
+.feed__amount__input__number::-webkit-outer-spin-button,
+.feed__amount__input__number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.feed__amount__input__number {
+  -moz-appearance: textfield;
+}
+
+.feed__amount__input__sign {
+  position: absolute;
+  color: #929699;
+  left: 603px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.period__inputs__wrapper {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 26px;
+  column-gap: 51px;
+  padding-right: 15px;
+}
+
+.period__input__wrapper {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--fourth-font-color);
+}
+
+.period__input__wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.period__input__wrapper input:checked~.period__input__checkmark {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.period__input__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--second-border-color);
+}
+
+.period__input__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.period__input__wrapper input:checked~.period__input__checkmark:after {
+  display: block;
+}
+
+.period__input__wrapper .period__input__checkmark:after {
+  top: 9px;
+  left: 9px;
+  border-radius: 50%;
+}
+
+.feed__button__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-left: 4px;
+}
+
+.feed__button {
+  background: var(--orange);
+  text-align: center;
+}
+
+.feed__bottom__text {
+  text-align: center;
+  color: var(--fourth-font-color);
+  margin-top: 31px;
 }
