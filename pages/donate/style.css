@@ -326,6 +326,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  transition: background .3s;
 }
 
 .radio__item__checkmark {
@@ -476,6 +477,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid var(--second-border-color);
+  transition: border .3s;
 }
 
 .period__input__wrapper:hover input~.period__input__checkmark {
