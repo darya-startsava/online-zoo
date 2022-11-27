@@ -1,0 +1,59 @@
+@media only screen and (max-width: 640px) {
+
+  .header {
+    position: fixed;
+    padding: 4px 0px;
+  }
+
+  .header__wrapper {
+    width: 100vw;
+  }
+
+
+  .header__left__wrapper {
+    width: 98vw;
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__burger__menu {
+    display: block;
+    width: 27px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(106%) contrast(102%);
+  }
+
+  .header__designed-by {
+    display: none;
+  }
+
+  .logo__bamboo {
+    top: 13px;
+    left: 21px;
+    height: 11px;
+  }
+
+  .logo__wrapper {
+    height: 23px;
+    border: none;
+    margin-top: -4px;
+    margin-left: 2px;
+  }
+
+  .logo__text {
+    font-size: 13px;
+  }
+
+  .watch-online {
+    height: 453px;
+    background-image: url('../../assets/images/giant-panda640.jpg');
+    background-position: -4px -2px;
+    background-size: 101%;
+  }
+
+  .watch-online__button {
+    top: calc(30% + 141px);
+  }
+}
