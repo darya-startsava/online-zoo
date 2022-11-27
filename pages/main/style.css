@@ -137,7 +137,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1160px;
+  width: 73vw;
   margin: 0 auto;
 }
 
@@ -175,27 +175,29 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .watch-online__wrapper {
   position: relative;
-  width: 1160px;
+  width: 73vw;
+  height: 73vw;
   margin: 0 auto;
+  font-size: 17.5px;
 }
 
 .watch-online__circle {
   position: absolute;
-  right: 110px;
+  right: 9%;
   top: 11px;
   background: var(--orange);
-  height: 465px;
-  width: 465px;
+  height: 40%;
+  width: 40%;
   border-radius: 50%;
 }
 
 .watch-online__title {
   position: absolute;
-  right: 2px;
+  right: 0%;
   top: 82px;
   text-transform: uppercase;
   width: 500px;
-  font-size: 105px;
+  font-size: 6em;
   font-weight: 700;
   text-align: center;
   line-height: 77%;
@@ -207,8 +209,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .watch-online__button {
   position: absolute;
-  right: 101px;
-  top: 544px;
+  right: 9%;
+  top: calc(30% + 188px);
   background: var(--orange);
 }
 
@@ -223,18 +225,27 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .backstage__wrapper {
   display: flex;
-  column-gap: 86px;
-  width: 1160px;
+  column-gap: 5vw;
+  width: 73vw;
   margin: 0 auto;
+}
+
+.backstage__image__wrapper {
+  width: 39vw;
+  height: 403px;
+  overflow: hidden;
+  position: relative;
 }
 
 .backstage__image {
   width: 609px;
   height: 403px;
+  position: absolute;
 }
 
 .backstage__right {
   margin-top: -38px;
+  width: 30vw;
 }
 
 .backstage__right__title {
@@ -264,7 +275,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .pets__wrapper {
   position: relative;
-  width: 1400px;
+  width: 88%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -275,14 +286,14 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .pets__items__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 28px;
-  row-gap: 21px;
-  width: 1160px;
+  column-gap: 3%;
+  row-gap: 3%;
+  width: 82%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .pets__item {
-  width: 366px;
   position: relative;
   border-radius: 4px;
   background: var(--second-background-color);
@@ -303,8 +314,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .pets__item__image {
   position: relative;
-  width: 366px;
-  height: 366px;
+  width: 100%;
   border-radius: 4px 4px 0 0;
 }
 
@@ -380,7 +390,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .feed__wrapper {
-  width: 1160px;
+  width: 73vw;
   background-color: rgba(253, 253, 255, 0.52);
   margin: 0 auto;
   border-radius: 20px;
@@ -512,7 +522,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1160px;
+  width: 73vw;
   margin: 0 auto;
   row-gap: 16px;
   padding-bottom: 20px;
@@ -648,7 +658,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .footer__wrapper {
-  width: 1160px;
+  width: 73vw;
   margin: 0 auto;
 }
 
@@ -785,7 +795,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .footer__nav {
   align-self: end;
-  margin-left: 60px;
+  margin-left: 5%;
   margin-bottom: -12px;
 }
 
@@ -796,6 +806,6 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .footer__desined__wrapper {
   font-weight: 100;
   align-self: end;
-  margin-left: 165px;
+  margin-left: 14%;
   margin-bottom: -16px;
 }
