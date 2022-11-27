@@ -151,6 +151,10 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   column-gap: 60px;
 }
 
+.nav__burger__menu {
+  display: none;
+}
+
 .header__nav__list__item__about {
   color: var(--second-border-color);
 }
@@ -492,6 +496,10 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .feed__scheme__item__arrow {
   margin-top: 57px;
+}
+
+.feed__scheme__item__arrow__adaptive {
+  display: none;
 }
 
 .feed__scheme__item__text {
