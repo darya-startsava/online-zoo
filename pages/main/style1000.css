@@ -1,0 +1,267 @@
+@media only screen and (max-width: 1400px) {
+
+
+  .watch-online__button {
+    top: calc(30% + 240px);
+  }
+
+  .backstage__wrapper {
+    width: 94vw;
+  }
+
+  .backstage__image {
+    right: -8vw;
+  }
+
+  .feed__wrapper {
+    width: 94vw;
+  }
+
+  .pets {
+    background-position: -33.5% 100%, 100% 100%;
+    background-size: 40%, 24%;
+  }
+
+  .button__arrow__right {
+    right: 2%;
+  }
+
+  .footer__nav {
+    margin-left: 0;
+  }
+
+  .footer__desined__wrapper {
+    margin-left: 2%;
+  }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .header {
+    z-index: 1;
+    position: relative;
+  }
+
+  .header__wrapper {
+    width: 94vw;
+  }
+
+  .watch-online {
+    height: 504px;
+    background-image: url('../../assets/images/giant-panda1000.jpg');
+    background-position: 0 -80px;
+  }
+
+  .watch-online__wrapper {
+    font-size: 13.5px;
+  }
+
+
+  .watch-online__circle {
+    right: 6%;
+    top: -2%;
+    width: 50%;
+    height: 50%;
+  }
+
+  .watch-online__title {
+    right: -13%;
+    top: 6%;
+    width: 490px;
+  }
+
+  .watch-online__button {
+    top: calc(30% + 183px);
+  }
+
+  .backstage {
+    background: none;
+  }
+
+  .backstage__right {
+    width: 49vw;
+  }
+
+  .button__arrow__right {
+    right: 1%;
+  }
+
+  .testimonials__item:last-of-type {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .nav__list {
+    column-gap: 49px;
+  }
+
+  .watch-online__title {
+    right: -13%;
+    top: 5.5%;
+    letter-spacing: 2px;
+    line-height: 64px;
+  }
+
+
+  .watch-online__button {
+    left: 59%;
+    font-size: 16px;
+  }
+
+  .backstage {
+    margin-top: -32px;
+  }
+
+  .backstage__wrapper {
+
+    column-gap: 3vw;
+  }
+
+  .backstage__image__wrapper {
+    width: 48.5vw;
+  }
+
+  .backstage__image {
+    right: -8vw;
+  }
+
+  .backstage__right {
+    margin-top: -48px;
+  }
+
+  .backstage__right__text__bottom {
+    margin-right: 5px;
+  }
+
+  .pets {
+    margin-top: 26px;
+  }
+
+  .pets__wrapper {
+    width: 95%;
+    margin-bottom: 41px;
+  }
+
+  .pets__items__wrapper {
+    row-gap: 13%;
+    width: 99%;
+    margin-bottom: 94px;
+  }
+
+  .button__arrow__left {
+    right: 59%;
+    top: 36.5%;
+  }
+
+  .button__arrow__right {
+    right: 34.5%;
+    top: 36.5%;
+  }
+
+  .feed {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .feed__wrapper {
+    padding-bottom: 49px;
+  }
+
+  .feed__title {
+    margin-top: 30px;
+  }
+
+  .feed__text__wrapper {
+    padding: 0 47px 10px 50px;
+  }
+
+  .feed__subtitle {
+    margin-top: -17px;
+    margin-bottom: 22px;
+    letter-spacing: -0.1px;
+  }
+
+  .feed__text_up {
+    padding-right: 28px;
+  }
+
+  .feed__text_down {
+    margin-right: 30px;
+  }
+
+
+  .feed__button__wrapper {
+    margin-top: 61px;
+  }
+
+  .feed__second-title {
+    margin-top: 20px;
+  }
+
+  .testimonials {
+    padding-top: 66px;
+    padding-bottom: 120px;
+    background-position-y: 117%;
+    background-position-x: 114.5%;
+    background-size: 30%;
+  }
+
+  .testimonials__wrapper {
+    width: 94vw;
+  }
+
+  .testimonials__title {
+    margin-bottom: 16px;
+  }
+
+  .testimonials__item {
+    width: 263px;
+  }
+
+  .testimonials__scroll {
+    width: 387px;
+    margin-right: 12px;
+  }
+
+  .testimonials__scroll::-webkit-slider-thumb {
+    width: 70px;
+  }
+
+  .testimonials__button {
+    margin-top: 38px;
+  }
+
+  .footer__wrapper {
+    width: 94vw;
+  }
+
+  .footer__subscription__wrapper {
+    margin-right: 34px;
+  }
+
+  .footer__nav {
+    margin-left: -47px;
+  }
+
+  .footer__desined__wrapper {
+    margin-left: 9%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .button__arrow__left, .button__arrow__right {
+    top: 34.5%;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .pets__items__wrapper {
+    row-gap: 18%;
+  }
+}
