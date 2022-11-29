@@ -15,7 +15,7 @@
     justify-content: space-between;
   }
 
-  .nav__list {
+  .header .nav__list {
     display: none;
   }
 
@@ -29,25 +29,25 @@
     display: none;
   }
 
-  .logo__bamboo {
+  .header .logo__bamboo {
     top: 13px;
     left: 21px;
     height: 11px;
   }
 
-  .logo__wrapper {
+  .header .logo__wrapper {
     height: 23px;
     border: none;
     margin-top: -4px;
     margin-left: 2px;
   }
 
-  .logo__text {
+  header .logo__text {
     font-size: 13px;
   }
 
   .watch-online {
-    height: 453px;
+    height: 373px;
     background-image: url('../../assets/images/giant-panda640.jpg');
     background-position: -4px -2px;
     background-size: 101%;
@@ -56,4 +56,181 @@
   .watch-online__button {
     top: calc(30% + 141px);
   }
+
+  .backstage {
+    margin-top: -71px;
+    padding-bottom: 37px;
+    background-image: url(../../assets/images/flower_foto1.png);
+    background-repeat: no-repeat;
+    background-position-y: 95%;
+    background-position-x: 126.5%;
+    background-size: 37%;
+  }
+
+  .backstage__image__wrapper {
+    display: none;
+  }
+
+  .backstage__right {
+    width: 77vw;
+    padding-left: 4px;
+  }
+
+  .backstage__right__subtitle {
+    margin-top: 33px;
+    margin-bottom: 18px;
+  }
+
+  .pets {
+    background-position: -97.5% 100%, 100% 100%;
+    background-size: 60%, 24%;
+  }
+
+  .pets__wrapper {
+    margin-bottom: 0px;
+  }
+
+  .pets__item_hidden {
+    display: none;
+  }
+
+  .pets__items__wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 14%;
+    margin-bottom: 73px;
+  }
+
+  .pets__item__description__wrapper {
+    margin-bottom: 9px;
+  }
+
+  .pets__item__description__title {
+    font-size: 12px;
+    margin: 5px 0 -1px 16px;
+  }
+
+  .pets__item__description__text__bottom {
+    font-size: 12px;
+    margin: 0 0 0px 14px;
+  }
+
+  .pets__item__description__food-icon_banana {
+    width: 10%;
+  }
+
+  .pets__item__description__food-icon_fish {
+    width: 14%;
+  }
+
+  .button__arrow__left {
+    right: 52.5%;
+    top: 35.5%;
+  }
+
+  .button__arrow__right {
+    right: 37.5%;
+    top: 35.5%;
+  }
+
+  .feed {
+    padding-top: 20px;
+  }
+
+  .feed__title {
+    margin-top: 8px;
+    font-size: 42px;
+  }
+
+  .feed__text__wrapper {
+    padding: 0 7px 10px 19px;
+  }
+
+  .feed__subtitle {
+    margin-top: -14px;
+    letter-spacing: -0.9px;
+  }
+
+  .feed__text_down {
+    margin-right: 21px;
+  }
+
+  .feed__second-title {
+    margin-top: 11px;
+    margin-bottom: 24px;
+  }
+
+  .feed__scheme__item__text {
+    margin-right: 4px;
+  }
+
+  .feed__button__wrapper {
+    margin-top: 30px;
+  }
+
+  .feed__wrapper {
+    padding-bottom: 60px;
+    margin-bottom: -30px;
+  }
+
+  .testimonials {
+    padding-bottom: 60px;
+    background-position-y: 116%;
+    background-position-x: 116.5%;
+  }
+
+  .testimonials__title {
+    margin-top: -3px;
+  }
+
+  .testimonials__item {
+    width: 575px;
+    height: 108px;
+  }
+
+  .testimonials__button {
+    margin-top: 24px;
+    margin-left: 181px;
+    width: 240px;
+  }
+
+  .footer {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+
+  .footer__subscription__wrapper {
+    display: none;
+  }
+
+  .footer__bottom__left__wrapper {
+    width: 94vw;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+  .footer__bottom__button {
+    margin-top: 58px;
+  }
+
+
+  .footer__social__wrapper {
+    row-gap: 18px;
+    margin-left: 2px;
+  }
+
+  .footer__nav {
+    margin-left: -37px;
+    margin-top: 58px;
+}
+
+.footer__nav .nav__list {
+  column-gap: 37px;
+}
+
+
+.footer__desined__wrapper {
+  margin-left: 11%;
+}
+
 }
