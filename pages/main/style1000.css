@@ -40,7 +40,7 @@
 @media only screen and (max-width: 1200px) {
 
   .header {
-    z-index: 1;
+    z-index: 2;
     position: relative;
   }
 
@@ -265,6 +265,25 @@
 
   .testimonials__items__wrapper {
     flex-direction: column;
+    row-gap: 15px;
+  }
+
+
+  .testimonials__item {
+    width: 575px;
+    height: 108px;
+  }
+
+  .testimonials__item__border__wrapper {
+    height: 105px;
+  }
+
+  .testimonials__item__wrapper {
+    height: 94px;
+  }
+
+  .testimonials__scroll {
+    display: none;
   }
 
   .feed__wrapper {
@@ -303,6 +322,8 @@
     right: 166px;
     top: -19px;
   }
+
+
 
 }
 
