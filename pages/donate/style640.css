@@ -51,6 +51,11 @@
     background-size: 219%;
   }
 
+
+  .feed__wrapper {
+    padding-bottom: 15px;
+  }
+
   .feed__title {
     margin-bottom: 20px;
     padding-right: 29px;
@@ -70,17 +75,41 @@
 
   .feed__down__wrapper {
     padding-top: 11px;
-    width: 96vw;
+    width: 94vw;
     padding-left: 37px;
+    padding-bottom: 16px;
   }
 
   .feed__down__title {
-    margin-left: -4px;
+    margin-left: 9px;
   }
 
   .feed__down__subtitle {
     margin-top: -5px;
     text-align: center;
+    padding-left: 9px;
+  }
+
+
+  .feed__down__panda__wrapper {
+    width: 522px;
+    padding-top: 8px;
+    column-gap: 73px;
+  }
+
+  .feed__down__panda__text {
+    margin-left: -13px;
+    width: 159px;
+  }
+
+  .feed__down__radio__title {
+    margin-left: -43px;
+    margin-top: -7px;
+    margin-bottom: 5px;
+  }
+
+  .feed__down__radio__item__wrapper {
+    width: 46px;
   }
 
   .feed__down__radio__item__wrapper:nth-of-type(2), .feed__down__radio__item__wrapper:nth-of-type(3) {
@@ -89,14 +118,36 @@
 
   .feed__down__radio__wrapper {
     margin-left: -36px;
-    margin-right: -34px;
+    margin-right: -46px;
     padding-left: 21px;
     padding-right: 21px;
   }
 
   .feed__down__radio__wrapper:after {
-    width: 87.5%;
-    left: 36px;
+    width: 86.5%;
+    left: 38px;
+  }
+
+  .radio__item__checkmark__wrapper {
+    left: 3px;
+  }
+
+  .feed__amount__inputs__wrapper {
+    padding-left: 8px;
+  }
+
+  .feed__amount__input__number {
+    width: 174px;
+    height: 39px;
+  }
+
+  .feed__amount__input__sign {
+    top: 11px;
+    left: 62.5%;
+  }
+
+  .period__inputs__wrapper {
+    margin-top: 33px;
   }
 
   .footer {
@@ -127,6 +178,7 @@
   .footer__nav {
     margin-left: -37px;
     margin-top: 58px;
+    width: auto;
   }
 
   .footer__nav .nav__list {
