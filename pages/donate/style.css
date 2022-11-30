@@ -154,6 +154,10 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   column-gap: 60px;
 }
 
+.nav__burger__menu {
+  display: none;
+}
+
 .header__nav__list__item__donate {
   color: var(--second-border-color);
 }
@@ -433,7 +437,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .feed__amount__input__sign {
   position: absolute;
   color: #929699;
-  left: 603px;
+  left: 62%;
   top: 16px;
   font-size: 20px;
   font-weight: 500;
