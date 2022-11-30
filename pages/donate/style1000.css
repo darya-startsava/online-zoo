@@ -109,6 +109,10 @@
     left: 5px;
   }
 
+  .feed__amount__input__sign {
+    left: 63.5%;
+  }
+
   .nav__list {
     column-gap: 49px;
   }
@@ -131,9 +135,11 @@
   }
 }
 
-@media only screen and (max-width: 950px) {}
-
 @media only screen and (max-width: 850px) {
+
+  .feed__down__radio__wrapper:after {
+    width: 94.5%;
+  }
 
   .footer__bottom__wrapper {
     flex-wrap: wrap;
@@ -142,7 +148,6 @@
   .footer__nav .nav__list {
     column-gap: 34px;
   }
-
 
   .footer__bottom__left__wrapper {
     flex-direction: row;
@@ -156,5 +161,14 @@
 
   .footer__social__item__name {
     display: none;
+  }
+
+  .footer__nav {
+    margin-left: -47px;
+    width: 43%;
+  }
+
+  .footer__desined__wrapper {
+    margin-left: 9%;
   }
 }
