@@ -139,7 +139,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1160px;
+  width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -182,7 +183,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .feed__wrapper {
-  width: 1160px;
+  width: 90vw;
+  max-width: 1160px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -210,7 +212,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .feed__down__wrapper {
-  width: 1160px;
+  width: 90vw;
+  max-width: 1160px;
   background-color: rgba(253, 253, 255, 0.52);
   margin: 0 auto;
   border-radius: 20px;
@@ -279,7 +282,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   background-color: var(--third-background-color);
   height: 27px;
   display: flex;
-  column-gap: 56px;
+  justify-content: space-between;
   position: relative
 }
 
@@ -288,7 +291,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   position: absolute;
   height: 2px;
   background-color: #72828E;
-  width: 894px;
+  width: 92%;
   top: 12px;
   left: 38px;
   z-index: 0;
@@ -526,7 +529,8 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .footer__wrapper {
-  width: 1160px;
+  width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -663,7 +667,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .footer__nav {
   align-self: end;
-  margin-left: 60px;
+  margin-left: 5%;
   margin-bottom: -12px;
 }
 
@@ -674,6 +678,6 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .footer__desined__wrapper {
   font-weight: 100;
   align-self: end;
-  margin-left: 165px;
+  margin-left: 14%;
   margin-bottom: -16px;
 }

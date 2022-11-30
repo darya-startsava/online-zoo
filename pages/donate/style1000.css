@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1400px) {
+
+
+  .footer__nav {
+    margin-left: 0;
+  }
+
+  .footer__desined__wrapper {
+    margin-left: 2%;
+  }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .header {
+    z-index: 4;
+    position: relative;
+  }
+
+  .header__wrapper {
+    width: 94vw;
+  }
+
+  .feed__down__radio__wrapper:after {
+    width: 91%;
+  }
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .feed__down__radio__wrapper:after {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .panda-photo {
+    height: 394px;
+    background-position: -179px 0;
+  }
+
+  .feed {
+    padding-bottom: 31px;
+  }
+
+  .feed__wrapper {
+    width: 94vw;
+  }
+
+  .feed__title {
+    margin-bottom: 34px;
+    padding-right: 92px;
+    line-height: 45px;
+  }
+
+  .feed__text {
+    margin-right: 7px;
+  }
+
+  .feed__down__wrapper {
+    width: 94vw;
+    padding-left: 48px;
+    padding-right: 47px;
+    padding-bottom: 32px;
+  }
+
+  .feed__down__title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .feed__subtitle {
+    margin-bottom: 43px;
+  }
+
+
+  .feed__down__radio__title {
+    padding-left: 17px;
+  }
+
+  .feed__down__radio__wrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .feed__down__radio__item__wrapper:first-of-type {
+    display: none;
+  }
+
+  .feed__down__radio__item__wrapper {
+    width: 35px;
+  }
+
+  .radio__item__checkmark__wrapper {
+    left: -2px;
+  }
+
+  .feed__down__radio__wrapper:after {
+    width: 96%;
+    left: 16px;
+  }
+
+  .feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper {
+    left: 5px;
+  }
+
+  .nav__list {
+    column-gap: 49px;
+  }
+
+  .footer__wrapper {
+    width: 94vw;
+  }
+
+  .footer__subscription__wrapper {
+    margin-right: 34px;
+  }
+
+  .footer__nav {
+    margin-left: -33px;
+    width: 43%;
+  }
+
+  .footer__desined__wrapper {
+    margin-left: 4%;
+  }
+}
+
+@media only screen and (max-width: 950px) {}
+
+@media only screen and (max-width: 850px) {
+
+  .footer__bottom__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__nav .nav__list {
+    column-gap: 34px;
+  }
+
+
+  .footer__bottom__left__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92vw;
+  }
+
+  .footer__bottom__button {
+    height: 18px;
+  }
+
+  .footer__social__item__name {
+    display: none;
+  }
+}
