@@ -236,6 +236,22 @@
 
 @media only screen and (max-width: 600px) {
 
+  .watch-online__wrapper {
+    font-size: 4.5px;
+  }
+
+  .watch-online__title {
+    top: 30.5%;
+    line-height: 22px;
+    width: 128px;
+    letter-spacing: 1px;
+  }
+
+  .watch-online__circle {
+    right: -2%;
+    top: 24%;
+  }
+
   .feed__scheme__item__arrow__adaptive {
     transform: rotate(90deg);
   }
@@ -257,5 +273,38 @@
 
   .testimonials__button {
     margin-left: 27px;
+  }
+
+  .button__arrow__left {
+    display: none;
+  }
+
+  .pets {
+    background-position: -49.5% 100%, 109% 100%;
+    background-size: 46%, 29%;
+  }
+
+  .button__arrow__right {
+    display: none;
+  }
+
+  .pets__wrapper {
+    width: 90%;
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+
+  .pets__items__wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 1.7%;
+    margin-bottom: 8px;
+  }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+  .watch-online__button {
+    top: calc(30% + 204px);
   }
 }

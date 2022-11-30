@@ -1,0 +1,169 @@
+@media only screen and (max-width: 320px) {
+  .header .logo__wrapper {
+    height: 23px;
+    border: none;
+    margin-top: -4px;
+    margin-left: -7px;
+  }
+
+  .watch-online {
+    background-position: 0px 35px;
+    background-size: 100%;
+    height: 292px;
+  }
+
+  .watch-online__button {
+    top: calc(30% + 171px);
+  }
+
+  .backstage {
+    margin-top: -16px;
+    padding-bottom: 37px;
+    padding-top: 163px;
+    background-position-y: -5%;
+    background-position-x: 132.5%;
+    background-size: 32%;
+  }
+
+  .backstage__right {
+    margin-top: -136px;
+    width: 94vw;
+    padding-left: 0px;
+  }
+
+  .backstage__right__title {
+    margin-bottom: -3px;
+    font-size: 24px;
+    margin-top: 23px;
+  }
+
+  .backstage__right__text__bottom {
+    margin-top: 8px;
+  }
+
+  .backstage__right__subtitle {
+    margin-bottom: 0px;
+    margin-top: 21px;
+  }
+
+  .feed__wrapper {
+    width: 94vw;
+    padding-bottom: 41px;
+    margin-bottom: -30px;
+  }
+
+  .feed__title {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .feed__subtitle {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .feed__text__wrapper {
+    padding: 0 0px 10px 0px;
+  }
+
+  .feed__text {
+    display: none;
+  }
+
+  .feed__second-title {
+    margin-top: -13px;
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .feed__scheme__wrapper {
+    row-gap: 27px;
+  }
+
+  .feed__scheme__item__text {
+    margin-top: 12px;
+  }
+
+  .feed__scheme__item__arrow__left {
+    top: 192px;
+  }
+
+  .feed__scheme__item__arrow__right {
+    top: 440px;
+  }
+
+  .feed__button__wrapper {
+    margin-top: 26px;
+  }
+
+  .testimonials__title {
+    margin-top: -36px;
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+
+  .testimonials__item {
+    width: 85vw;
+  }
+
+  .testimonials__button {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .testimonials {
+    padding-bottom: 38px;
+    background-position-y: 108%;
+    background-position-x: 115.5%;
+  }
+
+  .footer .logo__wrapper {
+    border: none;
+    margin-left: 86px;
+    margin-top: 10px;
+    width: 128px;
+  }
+
+  footer .logo__bamboo {
+    top: 0px;
+    left: 73px;
+  }
+
+  .footer__bottom__button {
+    margin-top: 0px;
+  }
+
+  .footer__bottom__left__wrapper {
+    margin-top: 1px;
+    flex-direction: column-reverse;
+    row-gap: 31px;
+    order: 1;
+  }
+
+  .footer__social__wrapper {
+    column-gap: 29px;
+    flex-direction: row;
+  }
+
+  .footer__nav .nav__list {
+    column-gap: 33px;
+  }
+
+  .footer__nav {
+    margin-left: -34px;
+    margin-top: 17px;
+    order: 3;
+  }
+
+  .footer__desined__wrapper {
+    margin-left: 28%;
+    font-size: 15px;
+    margin-top: 13px;
+    order: 2;
+  }
+
+  .footer {
+    padding-bottom: 19px;
+  }
+}
