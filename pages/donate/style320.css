@@ -12,6 +12,162 @@
     height: 222px;
   }
 
+  .feed__title {
+    margin-bottom: 17px;
+    padding-right: 14px;
+  }
+
+  .feed__down__wrapper {
+    padding-left: 9px;
+    padding-right: 19px;
+  }
+
+  .feed__down__title {
+    margin-top: 10px;
+    margin-bottom: 39px;
+    margin-left: 9px;
+    font-size: 24px;
+  }
+
+  .feed__subtitle {
+    font-size: 24px;
+    margin-bottom: 27px;
+  }
+
+  .feed__down__subtitle {
+    margin-top: -26px;
+    margin-left: -28px;
+    margin-right: -23px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+
+  .feed__down__panda__wrapper {
+    width: 100%;
+    column-gap: 32px;
+    margin-bottom: 8px;
+  }
+
+  .feed__down__panda__amount {
+    font-size: 40px;
+    margin-left: -30px;
+  }
+
+  .feed__down__panda__right {
+    width: 60%;
+  }
+
+
+  .feed__down__panda__left__wrapper {
+    margin-top: 43px;
+    row-gap: 7px;
+  }
+
+  .feed__down__panda__text {
+    margin-left: -8px;
+    width: 97px;
+    font-size: 9px;
+  }
+
+  .feed__down__panda__multiply {
+    font-size: 10px;
+    margin-top: 21px;
+  }
+
+  .feed__down__radio__title {
+    padding-left: 34px;
+    padding-bottom: 6px;
+  }
+
+  .feed__down__radio__wrapper {
+    height: 14px;
+    margin-left: -8px;
+    margin-right: -19px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .radio__item__checkmark__wrapper {
+    top: -33px;
+  }
+
+  .radio__item__checkmark {
+    top: 17px;
+    left: 17px;
+    height: 5px;
+    width: 5px;
+  }
+
+  .feed {
+    padding-bottom: 6px;
+}
+
+  .feed__down__radio__wrapper:after {
+    width: 84.5%;
+    left: 8%;
+    top: 31%;
+    height: 1px;
+  }
+
+  .feed__down__radio__item__wrapper {
+    margin-top: 20px;
+  }
+
+  .feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper {
+    left: 16px;
+    top: -18px;
+    border: 1px solid transparent;
+    height: 7px;
+    width: 7px;
+    outline-width: 1px;
+  }
+
+  .feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper .radio__item__checkmark {
+    top: 0px;
+    left: 1px;
+  }
+
+  .feed__down__radio__item__wrapper input:checked~.radio__item__checkmark__wrapper:after {
+    outline-width: 1px;
+    left: -6px;
+    top: -7px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .feed__amount__inputs__wrapper {
+    margin-top: 47px;
+  }
+
+  .feed__amount__input__sign {
+    left: 77.5%;
+  }
+
+  .period__inputs__wrapper {
+    margin-top: 27px;
+  }
+
+  .feed__button__wrapper {
+    width: 112%;
+    margin-top: 17px;
+    padding-left: 0px;
+    margin-left: -15px;
+  }
+
+  .feed__button__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+    padding-left: 0px;
+  }
+
+.feed__bottom__text {
+  width: 114%;
+  margin-left: -16px;
+  margin-bottom: 6px;
+}
+
   .footer .logo__wrapper {
     border: none;
     margin-left: 86px;
