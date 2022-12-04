@@ -340,6 +340,30 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   position: relative;
 }
 
+.pets__item_hidden {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.button__arrow_disabled, .button__arrow_disabled:focus, .button__arrow_disabled:hover, .button__arrow_disabled:active {
+  background-color: gray !important;
+}
+
 .pets__item:hover .pets__item__description__wrapper {
   top: 350px;
   right: center;

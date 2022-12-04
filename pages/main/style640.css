@@ -89,11 +89,7 @@
   .pets__wrapper {
     margin-bottom: 0px;
   }
-
-  .pets__item_hidden {
-    display: none;
-  }
-
+  
   .pets__items__wrapper {
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
