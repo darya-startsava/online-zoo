@@ -151,6 +151,8 @@
     row-gap: 13%;
     width: 99%;
     margin-bottom: 94px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .button__arrow__left {

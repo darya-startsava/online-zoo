@@ -77,40 +77,40 @@
           <p class="feed__down__radio__title">Amount</p>
           <div class="feed__down__radio__wrapper">
             <label class="feed__down__radio__item__wrapper">$5000
-              <input type="radio" name="amount" id="5000" value="5000">
+              <input class="radio__item__input" type="radio" name="amount" id="5000" value="5000">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
             <label class="feed__down__radio__item__wrapper"> $2000
-              <input type="radio" name="amount" id="2000" value="2000">
+              <input class="radio__item__input" type="radio" name="amount" id="2000" value="2000">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
-            <label class="feed__down__radio__item__wrapper amount-label_active">$1000
-              <input type="radio" name="amount" id="1000" value="1000" checked>
+            <label class="feed__down__radio__item__wrapper">$1000
+              <input class="radio__item__input" type="radio" name="amount" id="1000" value="1000">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
             <label class="feed__down__radio__item__wrapper">$500
-              <input type="radio" name="amount" id="500" value="500">
+              <input class="radio__item__input" type="radio" name="amount" id="500" value="500">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
             <label class="feed__down__radio__item__wrapper">$250
-              <input type="radio" name="amount" id="250" value="250">
+              <input class="radio__item__input" type="radio" name="amount" id="250" value="250">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
-            <label class="feed__down__radio__item__wrapper">$100
-              <input type="radio" name="amount" id="100" value="100">
+            <label class="feed__down__radio__item__wrapper  amount-label_active">$100
+              <input class="radio__item__input" type="radio" name="amount" id="100" value="100" checked>
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
             <label class="feed__down__radio__item__wrapper">$50
-              <input type="radio" name="amount" id="50" value="50">
+              <input class="radio__item__input" type="radio" name="amount" id="50" value="50">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
             <label class="feed__down__radio__item__wrapper">$25
-              <input type="radio" name="amount" id="25" value="25">
+              <input class="radio__item__input" type="radio" name="amount" id="25" value="25">
               <span class="radio__item__checkmark__wrapper"><span class="radio__item__checkmark"></span></span>
             </label>
           </div>
           <div class="feed__amount__inputs__wrapper">
-            <input class="feed__amount__input__number" type="number" placeholder="Another amount" max="9999" required>
+            <input id="feed__amount__input__number" class="feed__amount__input__number" type="number" placeholder="Another amount" min='1' max="9999" value="100" required>
             <span class="feed__amount__input__sign">$</span>
             <div class="period__inputs__wrapper">
               <label class="period__input__wrapper">Monthly
@@ -183,6 +183,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/amountPanel.js"></script>
 </body>
 
 </html>
