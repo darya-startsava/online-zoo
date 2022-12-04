@@ -292,6 +292,13 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   row-gap: 80px;
 }
 
+.pets__items__carousel__wrapper {
+  display: flex;
+  width: 300vw;
+  left: 0;
+  position: relative;
+}
+
 .pets__items__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -300,16 +307,18 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   width: 82%;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding-left: 221px;
+  padding-right: 224px;
 }
 
-.pets__item {
+.pets__item, .pets__item_right, .pets__item_left {
   position: relative;
   border-radius: 4px;
   background: var(--second-background-color);
   background-clip: padding-box;
 }
 
-.pets__item::after {
+.pets__item::after, .pets__item_right::after, .pets__item_left::after {
   position: absolute;
   top: -1px;
   bottom: -1px;
@@ -326,7 +335,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   width: 100%;
   border-radius: 4px 4px 0 0;
 }
-
+/* 
 .pets__item:hover .pets__item__image {
   width: 386px;
   height: 386px;
@@ -338,33 +347,32 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .pets__item:hover {
   position: relative;
-}
+} */
 
 .pets__item_hidden {
   display: none;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.carousel_left {
+  left: 100vw;
+  transition: left 2s;
 }
 
-@keyframes fade {
-  from {
-    opacity: .2
-  }
 
-  to {
-    opacity: 1
-  }
+.carousel_right {
+  left: -100vw;
+  transition: left 2s;
 }
 
-.button__arrow_disabled, .button__arrow_disabled:focus, .button__arrow_disabled:hover, .button__arrow_disabled:active {
+
+.button__arrow_disabled,
+.button__arrow_disabled:focus,
+.button__arrow_disabled:hover,
+.button__arrow_disabled:active {
   background-color: gray !important;
 }
 
-.pets__item:hover .pets__item__description__wrapper {
+/* .pets__item:hover .pets__item__description__wrapper {
   top: 350px;
   right: center;
   position: absolute;
@@ -372,7 +380,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   border: 2px solid var(--first-font-color);
   border-radius: 5px;
   color: var(--first-font-color);
-}
+} */
 
 .pets__item__description__wrapper {
   display: flex;

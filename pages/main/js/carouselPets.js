@@ -1,8 +1,11 @@
 const pets = document.querySelectorAll('.pets__item');
+const petsRight = document.querySelectorAll('.pets__item_right');
+const petsLeft = document.querySelectorAll('.pets__item_left');
+
 const buttonArrowLeft = document.getElementById('button__arrow__left');
 const buttonArrowRight = document.getElementById('button__arrow__right');
-buttonArrowLeft.addEventListener('click', () => carousel());
-buttonArrowRight.addEventListener('click', () => carousel());
+buttonArrowLeft.addEventListener('click', () => carousel('left'));
+buttonArrowRight.addEventListener('click', () => carousel('right'));
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
@@ -10,10 +13,9 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function carousel() {
+function createRandomPetsGroup(pets) {
   pets.forEach((i) => {
     i.classList.add('pets__item_hidden');
-    i.classList.remove('fade');
   });
   const willBeShownNumbers = new Set();
   let quantityShownPets = 4;
@@ -24,24 +26,45 @@ function carousel() {
     willBeShownNumbers.add(getRandomIntInclusive(0, pets.length - 1));
   }
   const willBeShownNumbersArray = Array.from(willBeShownNumbers);
-  willBeShownNumbersArray.forEach((i, index) => {
+  addOrder(willBeShownNumbersArray, pets);
+  return willBeShownNumbersArray;
+}
+
+function addOrder(orderArray, pets) {
+  pets.forEach((i) => {
+    i.classList.add('pets__item_hidden');
+  });
+  orderArray.forEach((i, index) => {
     pets[i].classList.remove('pets__item_hidden');
-    pets[i].classList.add('fade');
     pets[i].style.order = `${index}`;
   });
+}
+
+function carousel(side) {
+  let addClass = 'carousel_right';
+  let orderArray = [];
+  if (side === 'right') {
+    orderArray = createRandomPetsGroup(petsLeft);
+    createRandomPetsGroup(petsRight);
+    addClass = 'carousel_left';
+  } else {
+    orderArray = createRandomPetsGroup(petsRight);
+    createRandomPetsGroup(petsLeft);
+  }
+  console.log(orderArray);
   buttonArrowLeft.disabled = true;
   buttonArrowRight.disabled = true;
   buttonArrowLeft.classList.add('button__arrow_disabled');
   buttonArrowRight.classList.add('button__arrow_disabled');
+  document.querySelector('.pets__items__carousel__wrapper').classList.add(`${addClass}`);
   setTimeout(() => {
     buttonArrowLeft.disabled = false;
     buttonArrowRight.disabled = false;
     buttonArrowLeft.classList.remove('button__arrow_disabled');
     buttonArrowRight.classList.remove('button__arrow_disabled');
-    pets.forEach((i) => {
-      i.classList.remove('fade');
-    });
-  }, 1500);
+    document.querySelector('.pets__items__carousel__wrapper').classList.remove(`${addClass}`);
+    addOrder(orderArray, pets);
+  }, 1600);
 }
 
-carousel();
+carousel('left');
