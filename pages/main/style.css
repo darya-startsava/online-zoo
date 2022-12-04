@@ -138,6 +138,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   justify-content: space-between;
   align-items: center;
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -180,7 +181,9 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .watch-online__wrapper {
   position: relative;
   width: 73vw;
+  max-width: 1160px;
   height: 73vw;
+  max-height: 1160px;
   margin: 0 auto;
   font-size: 17.5px;
 }
@@ -231,6 +234,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   display: flex;
   column-gap: 5vw;
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -280,6 +284,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .pets__wrapper {
   position: relative;
   width: 88%;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -395,6 +400,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .feed__wrapper {
   width: 73vw;
+  max-width: 1160px;
   background-color: rgba(253, 253, 255, 0.52);
   margin: 0 auto;
   border-radius: 20px;
@@ -531,6 +537,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   flex-direction: column;
   align-items: center;
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
   row-gap: 16px;
   padding-bottom: 20px;
@@ -667,6 +674,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .footer__wrapper {
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
