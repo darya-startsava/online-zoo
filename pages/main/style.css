@@ -138,6 +138,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   justify-content: space-between;
   align-items: center;
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -180,7 +181,9 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .watch-online__wrapper {
   position: relative;
   width: 73vw;
+  max-width: 1160px;
   height: 73vw;
+  max-height: 1160px;
   margin: 0 auto;
   font-size: 17.5px;
 }
@@ -231,6 +234,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   display: flex;
   column-gap: 5vw;
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -280,11 +284,19 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 .pets__wrapper {
   position: relative;
   width: 88%;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 80px;
+}
+
+.pets__items__carousel__wrapper {
+  display: flex;
+  width: 300vw;
+  left: 0;
+  position: relative;
 }
 
 .pets__items__wrapper {
@@ -295,16 +307,18 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   width: 82%;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding-left: 221px;
+  padding-right: 224px;
 }
 
-.pets__item {
+.pets__item, .pets__item_right, .pets__item_left {
   position: relative;
   border-radius: 4px;
   background: var(--second-background-color);
   background-clip: padding-box;
 }
 
-.pets__item::after {
+.pets__item::after, .pets__item_right::after, .pets__item_left::after {
   position: absolute;
   top: -1px;
   bottom: -1px;
@@ -321,7 +335,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   width: 100%;
   border-radius: 4px 4px 0 0;
 }
-
+/* 
 .pets__item:hover .pets__item__image {
   width: 386px;
   height: 386px;
@@ -333,9 +347,32 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .pets__item:hover {
   position: relative;
+} */
+
+.pets__item_hidden {
+  display: none;
 }
 
-.pets__item:hover .pets__item__description__wrapper {
+.carousel_left {
+  left: 100vw;
+  transition: left 2s;
+}
+
+
+.carousel_right {
+  left: -100vw;
+  transition: left 2s;
+}
+
+
+.button__arrow_disabled,
+.button__arrow_disabled:focus,
+.button__arrow_disabled:hover,
+.button__arrow_disabled:active {
+  background-color: gray !important;
+}
+
+/* .pets__item:hover .pets__item__description__wrapper {
   top: 350px;
   right: center;
   position: absolute;
@@ -343,7 +380,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   border: 2px solid var(--first-font-color);
   border-radius: 5px;
   color: var(--first-font-color);
-}
+} */
 
 .pets__item__description__wrapper {
   display: flex;
@@ -395,6 +432,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .feed__wrapper {
   width: 73vw;
+  max-width: 1160px;
   background-color: rgba(253, 253, 255, 0.52);
   margin: 0 auto;
   border-radius: 20px;
@@ -531,6 +569,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   flex-direction: column;
   align-items: center;
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
   row-gap: 16px;
   padding-bottom: 20px;
@@ -667,6 +706,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 
 .footer__wrapper {
   width: 73vw;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
