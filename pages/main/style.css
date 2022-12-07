@@ -46,10 +46,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -670,7 +672,7 @@ button:active, .feed__button:active, .footer__bottom__button:active {
 }
 
 .testimonials__scroll::-webkit-slider-thumb {
-  width: 115px;
+  width: 12.5%;
   height: 6px;
   -webkit-appearance: none;
   border-radius: 8px;
