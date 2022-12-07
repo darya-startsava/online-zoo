@@ -51,7 +51,6 @@ function carousel(side) {
     orderArray = createRandomPetsGroup(petsRight);
     createRandomPetsGroup(petsLeft);
   }
-  console.log(orderArray);
   buttonArrowLeft.disabled = true;
   buttonArrowRight.disabled = true;
   buttonArrowLeft.classList.add('button__arrow_disabled');
