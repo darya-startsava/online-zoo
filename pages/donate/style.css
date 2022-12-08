@@ -92,6 +92,14 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   background: var(--button-active-color);
 }
 
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;;
+}
+
 .logo__wrapper {
   position: relative;
   width: 82px;
@@ -148,6 +156,65 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   display: flex;
   column-gap: 20px;
 }
+
+.nav__burger__menu__overlay {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  cursor: pointer;
+}
+
+.nav__burger__menu__wrapper {
+  background-color: white;
+  color: #333B41;
+  padding: 10px;
+}
+
+.burger__logo__wrapper {
+  height: 27px !important;
+  width: 65px !important;
+  border: none !important;
+  margin-top: -23px !important;
+  margin-left: 0px !important;
+  margin-bottom: 46px !important;
+}
+
+.nav__burger__menu__close-button {
+  border: none;
+  background: none;
+  position: relative;
+  left: calc(98vw - 25px);
+}
+.nav__list_burger {
+  display: flex;
+  flex-direction: column;
+  margin-left: -39px;
+  row-gap: 19px;
+  margin-bottom: 30px;
+}
+
+.nav__burger__menu__wrapper .logo__wrapper {
+  color: #FE9013;
+}
+
+.nav__burger__menu__wrapper .logo__text {
+  border: 1px solid #FE9013 !important;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 15px !important;
+}
+
+.nav__burger__menu__wrapper .logo__bamboo {
+  filter: invert(75%) sepia(100%) saturate(4402%) hue-rotate(348deg) brightness(99%) contrast(50%);
+}
+
 
 .nav__list {
   display: flex;
