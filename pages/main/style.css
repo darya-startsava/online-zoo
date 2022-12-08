@@ -707,6 +707,10 @@ button:active, .feed__button:active, .footer__bottom__button:active {
   background: var(--orange);
 }
 
+.testimonials__popup__overlay {
+  display: none;
+}
+
 .footer {
   background-color: var(--first-background-color);
   padding-top: 38px;
