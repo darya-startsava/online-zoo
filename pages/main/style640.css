@@ -1,5 +1,54 @@
 @media only screen and (max-width: 999px) {
 
+  .testimonials__wrapper {
+    position: relative;
+  }
+
+  .testimonials__popup {
+    width: 70%;
+    max-width: 263px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .testimonials__popup__overlay {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .testimonials__popup__close-button img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .testimonials__popup__close-button {
+    margin-left: 275px;
+    border: none;
+    background: none;
+  }
+
+  .testimonials__popup__content .testimonials__item {
+    width: auto;
+    height: auto;
+  }
+
+
   .testimonials__items__carousel__wrapper {
     left: 0px;
     transition: left 0s;
@@ -346,5 +395,11 @@
 @media only screen and (max-width: 550px) {
   .watch-online__button {
     top: calc(30% + 204px);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .testimonials__popup__close-button {
+    margin-left: 242px;
   }
 }
